@@ -1,0 +1,21 @@
+<html>
+<div id="myDiv" style="width: 100px; height: 100px; background-color: lightblue;">
+  Hover here
+</div>
+
+<script>
+  const myDiv = document.getElementById('myDiv');
+
+  myDiv.addEventListener('click', function() {
+    alert('Clicked!');
+  });
+
+  myDiv.addEventListener('mouseover', function() {
+    myDiv.style.backgroundColor = 'red';
+  });
+
+  myDiv.addEventListener('mouseout', function() {
+    myDiv.style.backgroundColor = 'lightblue';
+  });
+</script>
+</html>

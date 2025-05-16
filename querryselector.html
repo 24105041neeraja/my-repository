@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <p class="ptagclass">This is a p element. 1</p>
+    <p class="ptagclass">This is a p element. 2</p>
+    <p class="ptagclass">This is a p element. 3</p>
+    <p class="ptagclass">This is a p element. 4</p>
+    <p class="ptagclass">This is a p element. 5</p>
+    <p class="ptagclass">This is a p element. 6</p>
+    <p class="ptagclass">This is a p element. 7</p>
+    <script>
+      const dbcolor = ["red", "purple", "pink", "yellow", "green", "back", "blue"];
+      const nodelist = document.querySelectorAll(".ptagclass");
+      for (let i = 0; i < nodelist.length; i++) {
+        nodelist[i].style.backgroundColor = dbcolor[i];
+      }
+    </script>
+  </body>
+</html>

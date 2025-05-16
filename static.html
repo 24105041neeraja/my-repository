@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Static Positioning</title>
+<style>
+  .container {
+    width: 300px;
+    background-color: lightgray;
+    padding: 10px;
+  }
+
+  .box {
+    width: 80px;
+    height: 50px;
+    background-color: lightblue;
+    margin: 5px;
+  }
+
+  .static-box {
+    position: static; 
+    top: 50px;
+    left: 30px;
+    background-color: lightcoral;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box 1 (static)</div>
+    <div class="box static-box">Box 2 (static - with top/left)</div>
+    <div class="box">Box 3 (static)</div>
+  </div>
+</body>
+</html>

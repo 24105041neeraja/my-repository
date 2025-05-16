@@ -1,0 +1,114 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artchock</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            background-color: #8FBC8F; 
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .navigation li {
+            margin-left: 20px;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero-content {
+            padding: 40px;
+            text-align: left;
+        }
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .hero-content .button {
+            display: inline-block;
+            background-color: white;
+            color: #8FBC8F;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .hero-image {
+            
+        }
+        .greennade-text {
+            color: green;
+            font-size: 5em;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navigation ul {
+                margin-top: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navigation li {
+                margin: 10px 0;
+            }
+            .hero-content {
+                text-align: center;
+            }
+            .greennade-text {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="logo">ARTCHOCK</div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Where to Find</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero-content">
+        <h1>A HEALTHY EXPLOSION</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <a href="#" class="button">Read more</a>
+        <div>
+            <span>01</span>
+            <span></span> <span>02 03 04 05</span>
+        </div>
+    </div>
+    <div class="greennade-text">
+        GREENADE!
+    </div>
+    </body>
+</html>

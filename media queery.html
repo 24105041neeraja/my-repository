@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query Example</title>
+<style>
+  body {
+    font-family: sans-serif;
+    background-color: lightblue; /* Default background for wider screens */
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .box {
+    background-color: lightcoral;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%; /* Default width */
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  /* Media query for screens with a maximum width of 600px (typical for phones) */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: lightgreen; /* Different background for smaller screens */
+      color: darkgreen;
+    }
+
+    .box {
+      width: 95%; /* Wider box on smaller screens */
+      margin: 10px auto;
+    }
+
+    h1 {
+      font-size: 2em; /* Smaller heading */
+    }
+
+    p {
+      font-size: 0.9em; /* Slightly smaller text */
+    }
+  }
+
+  /* Media query for screens with a minimum width of 992px (typical for larger tablets/desktops) */
+  @media screen and (min-width: 992px) {
+    body {
+      background-color: lightskyblue; /* Different background for larger screens */
+      color: navy;
+    }
+
+    .box {g
+      width: 50%; /* Narrower box on larger screens */
+      margin: 30px auto;
+    }
+
+    h1 {
+      font-size: 3em; 
+    }
+
+    p {
+      font-size: 1.1em; 
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <div class="box">
+    <p>This is a box that will change its appearance based on the screen width, thanks to CSS media queries.</p>
+  </div>
+  <p>Try resizing your browser window to see the changes in background color, text size, and box width.</p>
+</body>
+</html>

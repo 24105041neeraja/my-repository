@@ -1,0 +1,115 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .hero-section {
+            background-color: #8FBC8F; 
+            color: white;
+            padding: 50px;
+            position: relative; 
+            height: 400px; 
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .headline {
+            position: relative; 
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            top: 30px; 
+        }
+
+        .sub-headline {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .read-more-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #556B2F;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navigation li {
+            margin-left: 20px;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+        }
+        .floating-image {
+            position: absolute;
+            bottom: 20px;
+            right: 50px;
+            width: 150px; 
+            background-color: rgba(255, 255, 255, 0.3);
+            height: 100px; 
+            border-radius: 10px;
+        }
+        .greenade-text {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3em;
+            font-weight: bold;
+            color: #556B2F;
+        }
+        .indicator-numbers {
+            position: absolute;
+            bottom: 10px;
+            left: 30px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="logo">ARTCHOCK</div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">Where to Find</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="headline">A HEALTHY EXPLOSION</h1>
+        <p class="sub-headline">orem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <a href="#" class="read-more-button">Read more</a>
+        <div class="indicator-numbers">01 02 03 04 05</div>
+        <div class="floating-image" 
+        <img src="green-tea1.png" style="width:auto" height="450px" alt="" srcset="">
+    </div> <div class="greenade-text">GREENADE!</div>
+    </div>
+</body>
+</html>
